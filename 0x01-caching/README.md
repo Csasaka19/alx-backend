@@ -1,3 +1,3 @@
 # Caching
 
-## Cash replacement policies
+## Cache replacement policies
