@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """First in first out cache module"""
 from base_caching import BaseCaching
 from collections import OrderedDict
@@ -23,4 +23,4 @@ class FIFOCache(BaseCaching):
         self.cache_data[key] = item
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             first_key, _ = self.cache_data.popitem(False)
-            print("DISCARD: ", first_key)
+            print("DISCARD:", first_key)
